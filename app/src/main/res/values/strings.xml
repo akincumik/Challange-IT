@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Challenge It</string>
+    <string name="lorem_ipsum_med">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sodales et nibh quis faucibus.</string>
+    <string name="start">Başlat</string>
+    <string name="join">Katıl</string>
+    <string name="enter_code">Kod Giriniz</string>
+    <string name="your_code">Kodunuz</string>
+    <string name="joiners">Katılımcılar</string>
+</resources>

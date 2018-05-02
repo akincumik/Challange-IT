@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "489229680521",
+    "firebase_url": "https://challenge-it.firebaseio.com",
+    "project_id": "challenge-it",
+    "storage_bucket": "challenge-it.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489229680521:android:4e625ebb0164ac06",
+        "android_client_info": {
+          "package_name": "com.cit.challengeit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489229680521-0fbd31b5qimek99kbhni6hlthf7kr6tp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cit.challengeit",
+            "certificate_hash": "ce85ff63d2a228ba08515e3a0d71d34bd08a87cf"
+          }
+        },
+        {
+          "client_id": "489229680521-8l5dntkplh147n27c66prs9jifmi9pi3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw1v6XMf5PAN2UibZGxdPPS-9YwStDbrc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489229680521-8l5dntkplh147n27c66prs9jifmi9pi3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

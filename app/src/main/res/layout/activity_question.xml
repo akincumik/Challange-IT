@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-1dp"
+        android:background="@color/black"
+        android:paddingBottom="@dimen/padding_xsmall"
+        android:paddingLeft="@dimen/padding_xmedium"
+        android:paddingRight="@dimen/padding_xmedium"
+        android:paddingTop="@dimen/padding_xsmall">
+
+        <ImageView
+            android:id="@+id/iv_question_user_photo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/padding_medium"
+            tools:src="@color/orange"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/iv_question_user_photo"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_question_label1"
+                style="@style/Text"
+                android:text="Soru: "
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_question_count"
+                style="@style/Text"
+                android:layout_toRightOf="@+id/tv_question_label1"
+                android:textColor="@color/white"
+                tools:text="4/50"/>
+
+            <TextView
+                android:id="@+id/tv_question_label2"
+                style="@style/Text"
+                android:layout_below="@id/tv_question_label1"
+                android:text="Puan: "
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_question_score"
+                style="@style/Text"
+                android:layout_below="@id/tv_question_label1"
+                android:layout_toRightOf="@+id/tv_question_label2"
+                android:textColor="@color/white"
+                tools:text="50"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_question_time"
+            style="@style/Text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            tools:text="20"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_question"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/progressbar_question"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_xsmall">
+
+            <TextView
+                android:id="@+id/tv_question_text"
+                style="@style/Text"
+                android:layout_marginBottom="@dimen/padding_medium"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"
+                tools:text="@string/lorem_ipsum_med"/>
+
+            <ImageView
+                android:id="@+id/iv_question_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xsmall"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginRight="@dimen/padding_medium"
+                tools:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:id="@+id/ll_question_choice_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_question_answer_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_medium"
+                    android:tag="a"
+                    app:cardBackgroundColor="@color/gray"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_question_answer_a"
+                        style="@style/Text"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/padding_xsmall"
+                        android:tag="a"
+                        tools:text="@string/lorem_ipsum_med"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_question_answer_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_medium"
+                    android:tag="b"
+                    app:cardBackgroundColor="@color/gray"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_question_answer_b"
+                        style="@style/Text"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/padding_xsmall"
+                        android:tag="b"
+                        tools:text="@string/lorem_ipsum_med"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_question_answer_c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_medium"
+                    android:tag="c"
+                    app:cardBackgroundColor="@color/gray"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_question_answer_c"
+                        style="@style/Text"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/padding_xsmall"
+                        android:tag="c"
+                        tools:text="@string/lorem_ipsum_med"/>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_question_answer_d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_medium"
+                    android:tag="d"
+                    app:cardBackgroundColor="@color/gray"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_question_answer_d"
+                        style="@style/Text"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/padding_xsmall"
+                        android:tag="d"
+                        tools:text="@string/lorem_ipsum_med"/>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
