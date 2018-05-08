@@ -77,6 +77,7 @@ public class QuestionActivity extends AppCompatActivity {
     private boolean mQuestionAnswered;
     private QuizInfo mQuizInfo;
     private String mUserAnswer = "-";
+    private String deneme;
 
     public static void start(Context context, QuizInfo quizInfo) {
         Intent intent = new Intent(context, QuestionActivity.class);
@@ -135,6 +136,7 @@ public class QuestionActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         // TODO: 31.3.2018 son soru cevaplandıysa bitiş ekranını göster
+
                         finish();
                         QuestionActivity.start(QuestionActivity.this, mQuizInfo);
                     }
